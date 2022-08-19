@@ -22,3 +22,7 @@ Download size on playstore can vary between min and max size based on user's dev
 ### I am stuck on bundling?
 
 Just wait. it may take some time to bundle .aab file. or use -l flag to log output.
+
+### What about ios?
+
+Open for pull request if you want to add support for ios.
