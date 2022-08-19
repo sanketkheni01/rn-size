@@ -25,4 +25,4 @@ Just wait. it may take some time to bundle .aab file. or use -l flag to log outp
 
 ### What about ios?
 
-Open for pull request if you want to add support for ios.
+Open for a pull request.
