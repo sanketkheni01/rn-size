@@ -1,0 +1,37 @@
+{
+  "name": "rn-size",
+  "version": "1.0.0",
+  "description": "Check your react native production app sizes",
+  "main": "./dist/index.js",
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc",
+    "dev": "tsc && npm i -g",
+    "npm-publish": "npm version patch && tsc && npm publish"
+  },
+  "author": "sanketkheni",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.0.0",
+    "typescript": "^4.5.5"
+  },
+  "bin": {
+    "rn-size": "dist/index.js"
+  },
+  "keywords": [
+    "react-native",
+    "app size"
+  ],
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanketkheni01/rn-size.git"
+  },
+  "homepage": "https://github.com/sanketkheni01/rn-size",
+  "bugs": {
+    "url": "https://github.com/sanketkheni01/rn-size/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
+}
