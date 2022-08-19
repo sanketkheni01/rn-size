@@ -1,7 +1,7 @@
 import { spawn } from 'child_process'
 import ora from 'ora'
 
-export default async function buildBundle() {
+export default async function buildBundle(includeLogs: boolean) {
   const spinner = ora('Building bundle...').start()
   spinner.color = 'blue'
   const build = () =>
@@ -20,6 +20,9 @@ export default async function buildBundle() {
         })
         child.on('error', function (err) {
           reject(err)
+        })
+        child.stdout.on('data', function (data) {
+          includeLogs && console.log(data.toString())
         })
       } catch (error) {
         reject(error)

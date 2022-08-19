@@ -31,6 +31,7 @@ async function convertToAPKs() {
             reject(stderr)
             return
           }
+
           resolve()
         }
       )
